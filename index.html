@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Spots Grand Prix</title>
+    <title>Your Favorite Library Spots Grand Prix</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,8 +62,8 @@
             
             <!-- Header -->
             <header class="p-6 text-center bg-gray-900/50">
-                <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Library Spots Grand Prix</h1>
-                <p class="text-gray-300 mt-2">Which spot will win? Cast your vote below!</p>
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Your Favorite Library Spots Grand Prix</h1>
+                <p class="text-gray-300 mt-2">Cast your vote below!</p>
             </header>
 
             <!-- Spots Introduction & Voting Area -->
@@ -98,12 +98,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             // --- Configuration & State ---
             const spotsData = [
-                { id: 'solo-pods', name: 'Solo Pods', description: 'For focused, individual study sessions.', likes: 0, position: 0, wins: 0, color: 'bg-red-500', icon: '🚗', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/solo_pods__2_.jpg' },
+                { id: 'solo-pods', name: 'Solo Pods', description: 'Best spot for focused, individual study sessions.', likes: 0, position: 0, wins: 0, color: 'bg-red-500', icon: '🚗', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/solo_pods__2_.jpg' },
                 { id: 'seminar-rooms', name: 'Seminar Rooms', description: 'Perfect for group projects and discussions.', likes: 0, position: 0, wins: 0, color: 'bg-blue-500', icon: '🏎️', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/seminar_room.jpg' },
-                { id: 'av-rooms', name: 'AV Rooms', description: 'Experience media with top-notch equipment.', likes: 0, position: 0, wins: 0, color: 'bg-green-500', icon: '🚁', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/AV_room.jpg' },
-                { id: 'main-stack', name: 'Main Stack', description: 'Get lost in the endless aisles of books.', likes: 0, position: 0, wins: 0, color: 'bg-yellow-500', icon: '🚓', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/Main_stack.jpg' },
-                { id: 'learning-commons', name: 'Learning Commons', description: 'A vibrant, collaborative open space.', likes: 0, position: 0, wins: 0, color: 'bg-purple-500', icon: '🏍️', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/Learning_commons.jpg' },
-                { id: 'resources-rooms', name: 'Learning Resources', description: 'Access special collections and materials.', likes: 0, position: 0, wins: 0, color: 'bg-pink-500', icon: '🚙', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/IMG_3028.jpg' }
+                { id: 'av-rooms', name: 'AV Rooms', description: 'Surround yourself with diverse multimedia resources.', likes: 0, position: 0, wins: 0, color: 'bg-green-500', icon: '🚁', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/AV_room.jpg' },
+                { id: 'main-stack', name: 'Main Stack', description: 'Immerse youself in the endless aisles of books.', likes: 0, position: 0, wins: 0, color: 'bg-yellow-500', icon: '🚓', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/Main_stack.jpg' },
+                { id: 'learning-commons', name: 'Learning Commons', description: 'A bright, open space that inspires collaboration and creativity.', likes: 0, position: 0, wins: 0, color: 'bg-purple-500', icon: '🏍️', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/Learning_commons.jpg' },
+                { id: 'resources-rooms', name: 'Learning Resources Room', description: 'Dive into an environment equipped with high-end technology.', likes: 0, position: 0, wins: 0, color: 'bg-pink-500', icon: '🚙', background: 'https://d329ms1y997xa5.cloudfront.net/accounts/206453/images/IMG_3028.jpg' }
             ];
 
             let gameInterval = null;
